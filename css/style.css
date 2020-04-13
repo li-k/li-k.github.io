@@ -1,0 +1,76 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #EEF1F3;
+}
+
+.header-banner {
+    background-color: #7E91A5;
+}
+
+.about-section {
+    background-color: #D9E0E8;
+    border-top: 1px solid #4E6884;
+    border-bottom: 1px solid #4E6884;
+}
+
+#about-image {
+    max-width: 100%;
+}
+
+.about-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+a {
+    color: #171E27;
+}
+
+a:hover {
+    color: #8290A0;
+    text-decoration: none;
+}
+
+.btn-outline-livid {
+    color: #4E6884;
+    border-color: #4E6884;
+}
+
+.btn-outline-livid:hover {
+    color: #ffffff;
+    background-color: #4E6884;
+}
+
+.border-livid {
+    border: 1px solid #4E6884;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    filter: invert(15%);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(15%);
+}
+
+.badge-tech-logo {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.contact-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.subtle-link {
+    color: #7E91A5;
+    font-size: 12px;
+}
