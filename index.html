@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163338155-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-163338155-3');
+        </script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,53 +20,58 @@
     </head>
 
     <body>
-        <div class="header-banner py-4 text-white text-center">
-            <h1 class="mt-2">Hi there! 👋 I'm Karina</h1>
+        <div class="text-white d-flex flex-column align-items-center justify-content-center" id="landing">
+            <div class="d-flex flex-wrap align-items-center justify-content-center">
+                Hi there <img src="img/wave.png" class="mx-2" id="wave-icon"> I'm Karina
+            </div>
+            <a href="#about" class="btn btn-livid-dark px-5 py-2 mt-3 section-button">Come on in!</a>
         </div>
-        <div class="row about-section shadow-sm d-flex justify-content-center mb-5">
-            <div class="my-5 px-5 col-lg-7 col-12">
-                <h4>A little about me:</h4>
-                <div class="d-flex align-items-center py-2">
-                    <img src="img/about/wdi.jpg" class="about-icon border-livid mr-3">
-                    <div>
-                        I'm a software developer at <a href="https://sites.disney.com/waltdisneyimagineering/" target="_blank" class="font-weight-bold">Walt Disney Imagineering</a>.
+        <div id="about">
+            <div class="mt-5 px-1 d-flex flex-wrap align-items-center justify-content-center">
+                <div class="mt-xl-5 offset-lg-1 col-xl-6 col-12">
+                    <h1 class="mb-4">A little about me:</h1>
+                    <div class="d-flex align-items-center py-xl-3 py-1">
+                        <img src="img/about/wdi.jpg" class="about-icon mr-3">
+                        <div>
+                            I'm a software developer at
+                            <a href="https://sites.disney.com/waltdisneyimagineering/" target="_blank"
+                               class="font-weight-bold">Walt Disney Imagineering</a>.
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center py-xl-3 py-1">
+                        <img src="img/about/coderosie.png" class="about-icon mr-3">
+                        <div>
+                            Before that, I was a digital analyst. How did I switch to software development, you ask?
+                            <a href="https://www.fastcompany.com/40576156/most-creative-people-2018-nikki-katz-disney"
+                               target="_blank" class="font-weight-bold">CODE: Rosie</a>.
+                            <small class="text-secondary d-block mt-1">
+                                <span class="font-weight-bolder">TLDR:</span>
+                                CODE: Rosie is a Disney program to promote gender diversity in tech, offering women in
+                                non-tech roles an opportunity to learn how to code and become software engineers.
+                            </small>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center py-xl-3 py-1">
+                        <img src="img/about/code.png" class="about-icon mr-3">
+                        I work mostly in Ruby/Ruby on Rails, but have dabbled in some other languages and frameworks.
+                    </div>
+                    <div class="d-flex align-items-center py-xl-3 py-1">
+                        <img src="img/about/like.png" class="about-icon mr-3">
+                        I enjoy good food, bad puns, and watching nature shows narrated by Sir David Attenborough.
                     </div>
                 </div>
-                <div class="d-flex align-items-center py-2">
-                    <img src="img/about/coderosie.png" class="about-icon border-livid mr-3">
-                    <div>
-                        Before that, I was a digital analyst. How did I switch to software development, you ask?
-                        <a href="https://www.fastcompany.com/40576156/most-creative-people-2018-nikki-katz-disney" target="_blank" class="font-weight-bold">CODE: Rosie</a>.
-                        <small class="text-secondary d-block">
-                            <span class="font-weight-bolder">TLDR:</span> CODE: Rosie is a Disney program to promote gender diversity in tech, offering women in non-tech roles an opportunity to learn how to code and become software engineers.
-                        </small>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center py-2">
-                    <img src="img/about/like.png" class="about-icon border-livid mr-3">
-                    I enjoy good food, bad puns, and watching nature shows narrated by Sir David Attenborough.
-                </div>
-                <div class="d-flex align-items-center py-2">
-                    <img src="img/about/code.png" class="about-icon border-livid mr-3">
-                    I can't show what I've done at my day job (internal tools), but below are some of my personal projects so far.
-                </div>
-                <div class="mt-4">
-                    Want to learn more? Or just want to chat about <a href="https://www.netflix.com/title/81115994" target="_blank" class="font-weight-bold">Tiger King</a>?
-                    <div class="mt-2">
-                        <a href="mailto:hikarinali@gmail.com" class="text-decoration-none">
-                            <img src="img/contact/email.png" class="contact-icon mr-3">
-                        </a>
-                        <a href="https://www.linkedin.com/in/karinali" target="_blank" class="text-decoration-none">
-                            <img src="img/contact/linkedin.png" class="contact-icon mr-3">
-                        </a>
-                        <a href="https://github.com/li-k" target="_blank" class="text-decoration-none">
-                            <img src="img/contact/github.svg" class="contact-icon mr-3">
-                        </a>
-                    </div>
+                <div class="ml-5 col-xl-4 col-8 mt-xl-0 mt-3 align-self-end">
+                    <img src="img/about/illustration.png" class="w-100">
                 </div>
             </div>
-            <div class="col-lg-3 col-7 d-flex align-items-end">
-                <img src="img/about/illustration.png" id="about-image">
+            <div class="d-flex mt-5 justify-content-center">
+                <div class="col-10 mt-xl-5">
+                    <div class="mt-xl-5 text-center">
+                        I can't really show what I've done at my day job <small class="text-secondary">(gotta preserve the magic)</small>,
+                        but below are some of my personal projects so far.
+                    </div>
+                    <a href="#projects" class="d-block btn btn-livid-dark px-5 py-2 mt-3 mx-auto section-button">Take a peek!</a>
+                </div>
             </div>
         </div>
         <!--
@@ -69,9 +82,9 @@
 
             You console.log"
         -->
-        <div class="my-3 mx-lg-5 mx-3">
+        <div class="py-3 mx-lg-5 mx-3" id="projects">
             <div class="row d-flex my-5">
-                <div class="col-lg-6 col-12">
+                <div class="col-xl-7 col-12 mb-xl-0 mb-3">
                     <div id="recipediaCarousel" class="carousel slide shadow-sm" data-ride="carousel" data-interval="false">
                         <ol class="carousel-indicators">
                             <li data-target="#recipediaCarousel" data-slide-to="0" class="active"></li>
@@ -107,17 +120,20 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 py-3 bg-light shadow-sm">
+                <div class="col-xl-5 col-12 py-3 bg-light shadow-sm">
                     <a href="http://my-recipedia.herokuapp.com/" target="_blank">
-                        <h3 class="card-title font-weight-bold">Recipedia</h3>
+                        <h2 class="mb-3 font-weight-bold">Recipedia</h2>
                     </a>
                     <p>
-                        With so many different cooking resources and recipes out there, Recipedia is a web application where you can aggregate your favorite recipes.
+                        With so many different cooking resources and recipes out there, Recipedia is a web application
+                        where you can aggregate your favorite recipes.
                         If you're not sure what to make, let the Recipe Generator help you decide!
                     </p>
                     <p>
-                        Recipedia started off as a week-long <span class="font-weight-bold">Express.js/MongoDB</span> project when I was in CODE: Rosie. I continued to use the app long after I initially made it,
-                        so in early 2019 I ended up recreating it in Ruby on Rails and PostgreSQL as I'm more familiar with that framework and database.
+                        Recipedia started off as a week-long <span class="font-weight-bold">Express.js/MongoDB</span>
+                        project when I was in CODE: Rosie.
+                        I continued to use the app long after I initially made it, so in early 2019 I ended up recreating
+                        it in Ruby on Rails and PostgreSQL as I'm more familiar with that framework and database.
                     </p>
                     <p>
                         <span class="badge badge-light badge-pill my-1 py-1 px-2">
@@ -141,11 +157,12 @@
                             <span class="align-middle">Heroku</span>
                         </span>
                     </p>
-                    <a class="btn btn-outline-livid" href="http://my-recipedia.herokuapp.com/" role="button" target="_blank">Check It Out</a>
+                    <a class="btn btn-outline-livid mt-3 px-5 px-2"
+                       href="http://my-recipedia.herokuapp.com/" role="button" target="_blank">Check it out!</a>
                 </div>
             </div>
             <div class="row d-flex my-5">
-                <div class="col-lg-6 col-12">
+                <div class="col-xl-7 col-12 mb-xl-0 mb-3">
                     <div id="dishlistCarousel" class="carousel slide shadow-sm" data-ride="carousel" data-interval="false">
                         <ol class="carousel-indicators">
                             <li data-target="#dishlistCarousel" data-slide-to="0" class="active"></li>
@@ -189,16 +206,18 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 py-3 bg-light shadow-sm">
+                <div class="col-xl-5 col-12 py-3 bg-light shadow-sm">
                     <a href="https://dishlist-app.herokuapp.com/" target="_blank">
-                        <h3 class="card-title font-weight-bold">Dishlist</h3>
+                        <h2 class="mb-3 font-weight-bold">Dishlist</h2>
                     </a>
                     <p>
-                        Dishlist is a web application to keep track of all the places you want to eat. Adding restaurants is easy with <span class="font-weight-bold">Yelp API</span> integration.
+                        Dishlist is a web application to keep track of all the places you want to eat. Adding
+                        restaurants is easy with <span class="font-weight-bold">Yelp API</span> integration.
                     </p>
                     <p>
-                        Similar to Recipedia, Dishlist was a week-long project...and also food-related. Sensing a theme?
-                        I haven't updated the code since, though I would love to eventually revisit it (especially to fix the color scheme toggle. It worked at one point -- I promise).
+                        Similar to Recipedia, Dishlist was a week-long project in CODE: Rosie...and also food-related. Sensing a theme?
+                        I haven't updated the code since, though I would love to eventually revisit it (especially to
+                        fix the color scheme toggle. It worked at one point -- I promise).
                     </p>
                     <p>
                         <span class="badge badge-light badge-pill my-1 py-1 px-2">
@@ -222,11 +241,12 @@
                             <span class="align-middle">Heroku</span>
                         </span>
                     </p>
-                    <a class="btn btn-outline-livid" href="https://dishlist-app.herokuapp.com/" role="button" target="_blank">Check It Out</a>
+                    <a class="btn btn-outline-livid mt-3 px-5 px-2"
+                       href="https://dishlist-app.herokuapp.com/" role="button" target="_blank">Check it out!</a>
                 </div>
             </div>
             <div class="row d-flex my-5">
-                <div class="col-lg-6 col-12">
+                <div class="col-xl-7 col-12 mb-xl-0 mb-3">
                     <div id="muydmCarousel" class="carousel slide shadow-sm" data-ride="carousel" data-interval="false">
                         <ol class="carousel-indicators">
                             <li data-target="#muydmCarousel" data-slide-to="0" class="active"></li>
@@ -254,41 +274,44 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 py-3 bg-light shadow-sm">
+                <div class="col-xl-5 col-12 py-3 bg-light shadow-sm">
                     <a href="http://muydm.herokuapp.com/" target="_blank">
-                        <h3 class="card-title font-weight-bold">MUYDM</h3>
+                        <h2 class="mb-3 font-weight-bold">MUYDM</h2>
                     </a>
-                    <div class="card-text">
-                        <p>
-                            MUYDM is a very minimal Rails app I made over a weekend in late 2018. Should I have included it here? Probably not, it's not all that impressive.
-                        </p>
-                        <p>
-                            I still like it though ¯\_(ツ)_/¯
-                        </p>
-                        <p>
+                    <p>
+                        MUYDM is a very minimal Rails app I made over a weekend in late 2018. Should I have included it
+                        here? Probably not, it's not all that impressive.
+                    </p>
+                    <p>
+                        I still like it though ¯\_(ツ)_/¯
+                    </p>
+                    <p>
+                        <span class="badge badge-light badge-pill my-1 py-1 px-2">
+                            <img class="badge-tech-logo mr-1" src="img/tech/ruby.jpg">
+                            <span class="align-middle">Ruby</span>
+                        </span>
                             <span class="badge badge-light badge-pill my-1 py-1 px-2">
-                                <img class="badge-tech-logo mr-1" src="img/tech/ruby.jpg">
-                                <span class="align-middle">Ruby</span>
-                            </span>
-                                <span class="badge badge-light badge-pill my-1 py-1 px-2">
-                                <img class="badge-tech-logo mr-1" src="img/tech/rails.png">
-                                <span class="align-middle">Ruby on Rails</span>
-                            </span>
-                                <span class="badge badge-light badge-pill my-1 py-1 px-2">
-                                <img class="badge-tech-logo mr-1" src="img/tech/postgresql.jpg">
-                                <span class="align-middle">PostgreSQL</span>
-                            </span>
-                                <span class="badge badge-light badge-pill my-1 py-1 px-2">
-                                <img class="badge-tech-logo mr-1" src="img/tech/heroku.png">
-                                <span class="align-middle">Heroku</span>
-                            </span>
-                        </p>
-                        <a class="btn btn-outline-livid" href="http://muydm.herokuapp.com/" role="button" target="_blank">Check It Out</a>
-                    </div>
+                            <img class="badge-tech-logo mr-1" src="img/tech/rails.png">
+                            <span class="align-middle">Ruby on Rails</span>
+                        </span>
+                            <span class="badge badge-light badge-pill my-1 py-1 px-2">
+                            <img class="badge-tech-logo mr-1" src="img/tech/postgresql.jpg">
+                            <span class="align-middle">PostgreSQL</span>
+                        </span>
+                            <span class="badge badge-light badge-pill my-1 py-1 px-2">
+                            <img class="badge-tech-logo mr-1" src="img/tech/heroku.png">
+                            <span class="align-middle">Heroku</span>
+                        </span>
+                    </p>
+                    <a class="btn btn-outline-livid mt-3 px-5 px-2"
+                       href="http://muydm.herokuapp.com/" role="button" target="_blank">Check it out!</a>
                 </div>
             </div>
         </div>
-        <div class="mt-5 text-center">
+        <div class="my-5 text-center">
+            <h5 class="mb-4">Want to learn more? Or just want to chat about
+                <a href="https://www.netflix.com/title/81115994" target="_blank" class="font-weight-bold">Tiger King</a>?</h5>
+
             <a href="mailto:hikarinali@gmail.com" class="text-decoration-none">
                 <img src="img/contact/email.png" class="contact-icon mx-2">
             </a>
@@ -298,12 +321,17 @@
             <a href="https://github.com/li-k" target="_blank" class="text-decoration-none">
                 <img src="img/contact/github.svg" class="contact-icon mx-2">
             </a>
-            <small class="d-block mt-5"><a href="https://icons8.com" class="subtle-link" target="_blank">icons & illustration from Icons8</a></small>
         </div>
+        <small class="d-block text-center pt-5">
+            <a href="https://icons8.com" class="subtle-link" target="_blank">
+                illustration & some icons from Icons8
+            </a>
+        </small>
         <!--
             Oh you're still here! ["hip", "hip"]
         -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

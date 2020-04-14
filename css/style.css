@@ -3,24 +3,31 @@ body {
     background-color: #EEF1F3;
 }
 
-.header-banner {
+#landing {
     background-color: #7E91A5;
+    height: 100vh;
+    font-size: 4em;
 }
 
-.about-section {
-    background-color: #D9E0E8;
-    border-top: 1px solid #4E6884;
-    border-bottom: 1px solid #4E6884;
+#wave-icon {
+    height: 75px
 }
 
-#about-image {
-    max-width: 100%;
+.section-button {
+    width: 200px;
+}
+
+#about {
+    min-height: 100vh;
+    font-size: 1.2em;
+    position: relative;
 }
 
 .about-icon {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
+    border: 1px solid #4E6884;
 }
 
 a {
@@ -38,12 +45,20 @@ a:hover {
 }
 
 .btn-outline-livid:hover {
-    color: #ffffff;
+    color: #D9E0E8;
     background-color: #4E6884;
 }
 
-.border-livid {
-    border: 1px solid #4E6884;
+.btn-livid-dark {
+    color: #D9E0E8;
+    background-color: #4E6884;
+    border-color: #D9E0E8;
+}
+
+.btn-livid-dark:hover {
+    color: #4E6884;
+    background-color: #D9E0E8;
+    border-color: #4E6884;
 }
 
 .carousel-indicators li {
@@ -55,7 +70,7 @@ a:hover {
 
 .carousel-control-next,
 .carousel-control-prev {
-    filter: invert(15%);
+    filter: invert(40%);
 }
 
 .badge-tech-logo {
@@ -65,8 +80,8 @@ a:hover {
 }
 
 .contact-icon {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
 }
 
