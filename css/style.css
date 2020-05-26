@@ -71,6 +71,11 @@ a:hover {
 .carousel-control-next,
 .carousel-control-prev {
     filter: invert(40%);
+    width: 5%;
+}
+
+.bg-lighter {
+    background-color: #FDFDFE;
 }
 
 .badge-tech-logo {
